@@ -6,7 +6,7 @@
 
 <title>Happy Birthday Mrs. ❤️</title>
 
-<!-- Google Fonts -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -31,9 +31,6 @@ body{
     overflow-x:hidden;
 }
 
-/* =========================
-   BACKGROUND
-========================= */
 
 body::before{
     content:"";
@@ -46,7 +43,7 @@ body::before{
     z-index:-2;
 }
 
-/* Stars */
+
 
 .stars{
     position:fixed;
@@ -70,9 +67,7 @@ body::before{
     50%{opacity:1;transform:scale(1.4)}
 }
 
-/* =========================
-   OPENING
-========================= */
+
 
 #opening{
     position:fixed;
@@ -140,9 +135,7 @@ body::before{
     transform:translateY(-3px);
 }
 
-/* =========================
-   GENERAL
-========================= */
+
 
 section{
     min-height:100vh;
@@ -168,9 +161,7 @@ section{
     text-align:center;
 }
 
-/* =========================
-   HERO
-========================= */
+
 
 .hero{
     text-align:center;
@@ -220,9 +211,7 @@ section{
     line-height:2;
 }
 
-/* =========================
-   COUNTDOWN
-========================= */
+
 
 .countdown{
     display:flex;
@@ -257,9 +246,7 @@ section{
     margin-top:5px;
 }
 
-/* =========================
-   STORY
-========================= */
+
 
 .story-container{
     max-width:850px;
@@ -317,9 +304,6 @@ section{
     line-height:1.7;
 }
 
-/* =========================
-   LOVE LETTER
-========================= */
 
 .letter-section{
     background:
@@ -359,9 +343,6 @@ section{
     50%{opacity:0}
 }
 
-/* =========================
-   BENGALI MESSAGE
-========================= */
 
 .bengali-section{
     position:relative;
@@ -398,9 +379,6 @@ section{
     font-size:38px;
 }
 
-/* =========================
-   PHOTO GALLERY
-========================= */
 
 .gallery{
     width:min(1100px,100%);
@@ -466,9 +444,7 @@ section{
     color:#eee;
 }
 
-/* =========================
-   MEMORY
-========================= */
+
 
 .memory-card{
     max-width:750px;
@@ -491,9 +467,7 @@ section{
     color:#ddd;
 }
 
-/* =========================
-   PROMISE
-========================= */
+
 
 .promise-box{
     max-width:800px;
@@ -508,9 +482,7 @@ section{
     color:#cfcfcf;
 }
 
-/* =========================
-   CAKE
-========================= */
+
 
 .cake-section{
     min-height:70vh;
@@ -561,9 +533,7 @@ section{
     to{transform:rotate(-45deg) scale(1.1)}
 }
 
-/* =========================
-   FINAL
-========================= */
+
 
 .final{
     text-align:center;
@@ -602,9 +572,6 @@ section{
     font-size:11px;
 }
 
-/* =========================
-   BUTTON
-========================= */
 
 .surprise-btn{
     margin-top:45px;
@@ -624,9 +591,7 @@ section{
     box-shadow:0 15px 40px rgba(255,70,140,.2);
 }
 
-/* =========================
-   POPUP
-========================= */
+
 
 #popup{
     position:fixed;
@@ -691,9 +656,7 @@ section{
     }
 }
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media(max-width:700px){
 
@@ -785,15 +748,10 @@ section{
 
 <body>
 
-<!-- =========================
-     STARS
-========================= -->
 
 <div class="stars" id="stars"></div>
 
-<!-- =========================
-     OPENING
-========================= -->
+
 
 <div id="opening">
 
@@ -822,9 +780,7 @@ section{
 </div>
 
 
-<!-- =========================
-     HERO
-========================= -->
+
 
 <section class="hero">
 
@@ -870,9 +826,7 @@ section{
 </section>
 
 
-<!-- =========================
-     STORY
-========================= -->
+
 
 <section>
 
@@ -983,9 +937,7 @@ section{
 </section>
 
 
-<!-- =========================
-     LOVE LETTER
-========================= -->
+
 
 <section class="letter-section">
 
@@ -1009,9 +961,7 @@ section{
 </section>
 
 
-<!-- =========================
-     BENGALI MESSAGE
-========================= -->
+
 
 <section class="bengali-section">
 
@@ -1070,9 +1020,7 @@ section{
 </section>
 
 
-<!-- =========================
-     PHOTO GALLERY
-========================= -->
+
 
 <section>
 
@@ -1122,9 +1070,7 @@ section{
 </section>
 
 
-<!-- =========================
-     MEMORY
-========================= -->
+
 
 <section>
 
@@ -1149,9 +1095,7 @@ section{
 </section>
 
 
-<!-- =========================
-     PROMISE
-========================= -->
+
 
 <section>
 
@@ -1199,9 +1143,7 @@ section{
 </section>
 
 
-<!-- =========================
-     CAKE
-========================= -->
+
 
 <section class="cake-section">
 
@@ -1227,9 +1169,7 @@ section{
 </section>
 
 
-<!-- =========================
-     FINAL
-========================= -->
+
 
 <section class="final">
 
@@ -1291,9 +1231,7 @@ section{
 </section>
 
 
-<!-- =========================
-     POPUP
-========================= -->
+
 
 <div id="popup">
 
@@ -1334,9 +1272,7 @@ section{
 
 <script>
 
-/* =========================
-   OPEN WEBSITE
-========================= */
+
 
 function openWebsite(){
 
@@ -1352,9 +1288,7 @@ function openWebsite(){
 }
 
 
-/* =========================
-   CREATE STARS
-========================= */
+
 
 const starsContainer = document.getElementById("stars");
 
@@ -1373,9 +1307,8 @@ for(let i=0;i<120;i++){
 }
 
 
-/* =========================
-   COUNTDOWN
-========================= */
+
+
 
 function updateCountdown(){
 
@@ -1443,9 +1376,6 @@ setInterval(updateCountdown,1000);
 updateCountdown();
 
 
-/* =========================
-   TYPING LOVE LETTER
-========================= */
 
 const letterText = `Babi,
 
@@ -1522,9 +1452,6 @@ function typeLetter(){
 }
 
 
-/* =========================
-   START TYPING WHEN VISIBLE
-========================= */
 
 const letterSection =
     document.querySelector(".letter-section");
@@ -1552,9 +1479,7 @@ const letterObserver =
 letterObserver.observe(letterSection);
 
 
-/* =========================
-   PHOTO ENTRY ANIMATION
-========================= */
+
 
 const photoCards =
     document.querySelectorAll(".photo-card");
@@ -1597,9 +1522,7 @@ photoCards.forEach(card=>{
 });
 
 
-/* =========================
-   FLOATING HEARTS
-========================= */
+
 
 function createHeart(){
 
@@ -1630,9 +1553,7 @@ function createHeart(){
 setInterval(createHeart,1800);
 
 
-/* =========================
-   FINAL SURPRISE
-========================= */
+
 
 function showFinalSurprise(){
 
@@ -1647,9 +1568,7 @@ function showFinalSurprise(){
 }
 
 
-/* =========================
-   CLOSE POPUP
-========================= */
+
 
 document.getElementById("popup").addEventListener(
     "click",
