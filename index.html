@@ -591,6 +591,25 @@ section{
     box-shadow:0 15px 40px rgba(255,70,140,.2);
 }
 
+.test-blast-btn{
+    margin-top:15px;
+    padding:12px 25px;
+    border-radius:50px;
+    border:1px solid rgba(255,180,100,.45);
+    background:rgba(255,150,70,.06);
+    color:#f5d6c0;
+    cursor:pointer;
+    font-family:'Montserrat',sans-serif;
+    font-size:11px;
+    letter-spacing:2px;
+    transition:.4s;
+}
+
+.test-blast-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 35px rgba(255,130,70,.2);
+}
+
 
 
 #popup{
@@ -1203,6 +1222,42 @@ section{
 <section>
 
     <div class="section-label">
+        Our Little Videos
+    </div>
+
+    <div class="section-title">
+        Moments That<br>
+        Move ❤️
+    </div>
+
+    <div class="video-gallery">
+
+        <div class="video-card">
+            <video controls playsinline preload="metadata">
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <p>One of my favourite moments with you ❤️</p>
+        </div>
+
+        <div class="video-card">
+            <video controls playsinline preload="metadata">
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <p>A memory I want to keep forever ❤️</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section>
+
+    <div class="section-label">
         Our Memories
     </div>
 
@@ -1403,6 +1458,12 @@ section{
     <button class="surprise-btn" onclick="showFinalSurprise()">
 
         One Last Surprise 💖
+
+    </button>
+
+    <button class="test-blast-btn" onclick="testMidnightBlast()">
+
+        TEST MIDNIGHT BLAST 🎆
 
     </button>
 
@@ -1831,7 +1892,9 @@ videoCards.forEach(card=>{
 });
 
 
-
+/* =========================
+   MIDNIGHT BIRTHDAY BLAST
+========================= */
 
 const birthdayBlast =
     document.getElementById("midnightBlast");
@@ -1986,6 +2049,16 @@ function closeBirthdayBlast(){
     birthdayBlast.style.display = "none";
 
     birthdayParticles = [];
+
+}
+
+function testMidnightBlast(){
+
+    sessionStorage.removeItem("birthdayBlastShown");
+
+    birthdayBlastStarted = false;
+
+    startBirthdayBlast();
 
 }
 
